@@ -20,6 +20,7 @@ list_of_files = [
     "params.yaml",
     "schema.yaml",
     "main.py",
+    "requirements.txt"
     "Dockerfile",
     "setup.py",
     "research/research.ipynb",
