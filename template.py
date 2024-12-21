@@ -8,6 +8,7 @@ list_of_files = [
     ".github/workflows/.gitkeep",
     f"src/{PROJECT_NAME}/__init__.py",
     f"src/{PROJECT_NAME}/components/__init__.py",
+    f"src/{PROJECT_NAME}/components/tests",
     f"src/{PROJECT_NAME}/utils/__init__.py",
     f"src/{PROJECT_NAME}/utils/common.py",
     f"src/{PROJECT_NAME}/config/__init__.py",

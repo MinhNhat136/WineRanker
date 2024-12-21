@@ -5,10 +5,9 @@
 3. conda init
 4. conda activate venv/
 5. pip install -r requirements.txt
-6. 
+ 
 
 ## Workflows Pipeline
-
 1. Data Ingestion
 2. Data Validation
 3. Data Transfomation
@@ -16,14 +15,13 @@
 5. Model Evaluation
 
 ## Workflows Jobs Continuos Integration
-
 1. Config.yaml
 2. Params.yaml
 3. Config entity
 4. Configuration Manager
 5. Update the components
 6. Create Pipeline
-7. Front end-- Api's, Training APi's, Batch Prtediction API's
+7. Front end-- Api's, Training Api's, Batch Prtediction API's
 
 ## Plan 
 1. Building Flask App 
