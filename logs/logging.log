@@ -1,10 +1,10 @@
-[2024-12-21 17:01:48,379: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<< ]
-[2024-12-21 17:01:48,379: INFO: common: yaml file: config\config.yaml loaded successfully ]
-[2024-12-21 17:01:48,379: INFO: common: yaml file: params.yaml loaded successfully ]
-[2024-12-21 17:01:48,379: INFO: common: yaml file: schema.yaml loaded successfully ]
-[2024-12-21 17:01:48,379: INFO: common: created directory at: artifacts ]
-[2024-12-21 17:01:48,379: INFO: common: created directory at: artifacts/data_ingestion ]
-[2024-12-21 17:01:49,732: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+[2024-12-21 18:17:49,331: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<< ]
+[2024-12-21 18:17:49,331: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 18:17:49,337: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 18:17:49,337: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-21 18:17:49,339: INFO: common: created directory at: artifacts ]
+[2024-12-21 18:17:49,339: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-21 18:17:50,682: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
 Connection: close
 Content-Length: 23329
 Cache-Control: max-age=300
@@ -15,22 +15,31 @@ Strict-Transport-Security: max-age=31536000
 X-Content-Type-Options: nosniff
 X-Frame-Options: deny
 X-XSS-Protection: 1; mode=block
-X-GitHub-Request-Id: 75D6:1F21AF:6FD75C:759AE6:67668CD6
+X-GitHub-Request-Id: 3C0E:1BF2F5:829391:88FC27:6766A452
 Accept-Ranges: bytes
-Date: Sat, 21 Dec 2024 10:03:45 GMT
+Date: Sat, 21 Dec 2024 11:19:46 GMT
 Via: 1.1 varnish
-X-Served-By: cache-sin-wsss1830029-SIN
-X-Cache: HIT
+X-Served-By: cache-sin-wsss1830031-SIN
+X-Cache: MISS
 X-Cache-Hits: 0
-X-Timer: S1734775425.142980,VS0,VE332
+X-Timer: S1734779986.170676,VS0,VE306
 Vary: Authorization,Accept-Encoding,Origin
 Access-Control-Allow-Origin: *
 Cross-Origin-Resource-Policy: cross-origin
-X-Fastly-Request-ID: cb37f071cd8e319b18707c311fb8917dcf3fd476
-Expires: Sat, 21 Dec 2024 10:08:45 GMT
+X-Fastly-Request-ID: 7a5bebe27423fd8db6c28a791bdb2b5c91aaa88e
+Expires: Sat, 21 Dec 2024 11:24:46 GMT
 Source-Age: 0
 
  ]
-[2024-12-21 17:01:49,732: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+[2024-12-21 18:17:50,690: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x ]
+[2024-12-21 18:17:50,691: INFO: main: >>>>>> stage Data Validation stage started <<<<<< ]
+[2024-12-21 18:17:50,692: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 18:17:50,692: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 18:17:50,695: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-21 18:17:50,695: INFO: common: created directory at: artifacts ]
+[2024-12-21 18:17:50,695: INFO: common: created directory at: artifacts/data_validation ]
+[2024-12-21 18:17:50,726: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x ]

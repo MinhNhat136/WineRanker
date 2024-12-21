@@ -8,7 +8,6 @@ class DataIngestion:
     def __init__(self,config:DataIngestionConfig):
         self.config=config
     
-    # Downloading the zip file
     def download_file(self):
         if not os.path.exists(self.config.local_data_file):
             filename, headers = request.urlretrieve(
