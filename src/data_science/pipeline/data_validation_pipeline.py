@@ -8,7 +8,7 @@ class DataValidationTrainingPipeline:
     def __init__(self):
         pass
 
-    def initiate_data_validation(self):
+    def initiate(self):
         config = ConfigurationManager()
         data_validation_config = config.get_data_validation_config()
         data_validation = DataValiadtion(config=data_validation_config)
@@ -18,7 +18,7 @@ if __name__ == '__main__':
     try:
         logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         obj = DataValidationTrainingPipeline()
-        obj.initiate_data_validation()
+        obj.initiate()
         logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
         logger.exception(e)

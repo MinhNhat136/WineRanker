@@ -1,3 +1,5 @@
 ElasticNet:
   alpha: 0.2
   l1_ratio: 0.1
+  max_iter: 1000
+  tol: 0.0001

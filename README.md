@@ -1,14 +1,11 @@
-
 ## Setup
-git clone -> open folder with vsc -> terminal 
 
-conda create -p venv python==3.12 -y
-
-conda init
-
-conda activate venv/
-
-pip install -r requirements.txt
+1. git clone -> open folder with vsc -> terminal 
+2. conda create -p venv python==3.12 -y
+3. conda init
+4. conda activate venv/
+5. pip install -r requirements.txt
+6. 
 
 ## Workflows Pipeline
 
@@ -24,9 +21,13 @@ pip install -r requirements.txt
 2. Params.yaml
 3. Config entity
 4. Configuration Manager
-5. Update the components-- Data Ingestion, Data Transformation, Model Trainer
-6. Create Pipeline-- Training Pipeline,Prediction Pipeline
+5. Update the components
+6. Create Pipeline
 7. Front end-- Api's, Training APi's, Batch Prtediction API's
 
+## Plan 
 
+1. Building Flask App 
+2. Docker 
+3. Github Action for CI/CD
 
