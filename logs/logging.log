@@ -1,1 +1,88 @@
-[2024-12-21 13:16:44,324: INFO: main: Welcome to my first prj mlops ]
+[2024-12-21 16:35:09,821: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 16:35:09,824: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 16:35:49,921: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 16:35:49,929: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 16:35:49,931: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-21 16:35:49,933: INFO: common: created directory at: artifacts ]
+[2024-12-21 16:35:49,935: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-21 16:35:51,135: INFO: 2514658180: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sat, 21 Dec 2024 09:37:46 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=520=nRPRtFJ9eUEb2FpvPxhyoNJo_4Rv9WiEEnQkCK9manG4YKxHp_qDp3Uqxmmw-OtcJkUEqlXH17IQrL1UQe19nk25kKOeJAPuruXKxlRmpt5p79SomQ-fskavjeoZtZoYyPpTc_C4Uht91tqtx0YhsYixNbpW1HYe9-h1Yem2Go64D9lmxg; expires=Sun, 22-Jun-2025 09:37:46 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+ ]
+[2024-12-21 16:37:38,828: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 16:37:38,831: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 16:37:38,832: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-21 16:37:38,833: INFO: common: created directory at: artifacts ]
+[2024-12-21 16:37:38,835: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-21 16:37:39,936: INFO: 2514658180: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 75D6:1F21AF:6FD75C:759AE6:67668CD6
+Accept-Ranges: bytes
+Date: Sat, 21 Dec 2024 09:39:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830074-SIN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1734773975.286080,VS0,VE376
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: d80b6709d90491de89f1de0fe93280e71f3a6aa8
+Expires: Sat, 21 Dec 2024 09:44:35 GMT
+Source-Age: 0
+
+ ]
+[2024-12-21 16:40:21,113: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-21 16:40:21,115: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-21 16:40:21,116: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-21 16:40:21,117: INFO: common: created directory at: artifacts ]
+[2024-12-21 16:40:21,119: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-21 16:40:22,076: INFO: 2514658180: artifacts/data_ingestion/data.zip download! with following info: 
+Content-Type: text/html; charset=utf-8
+X-Robots-Tag: noindex, nofollow, nosnippet
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Sat, 21 Dec 2024 09:42:17 GMT
+P3P: CP="This is not a P3P policy! See g.co/p3phelp for more info."
+Content-Security-Policy: require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt
+Referrer-Policy: origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: NID=520=qB3oU1nkXL1FlaUFKdsXLyFSNdQAYRgrxUQSIgkgufnqZ-v4gEw_AwJCs-AhV4RGdyITYQM6PuSo57lJ3otqT08GdaHLrO2ZqlneukuGYuUgKQFA96vRINv5Ki8PAWnA7WT_65Jjq37BtKIIukwGn7IwQvXidhKJsCiK4k2zJ0ENGdAi0g; expires=Sun, 22-Jun-2025 09:42:17 GMT; path=/; domain=.google.com; HttpOnly
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+Connection: close
+Transfer-Encoding: chunked
+
+ ]

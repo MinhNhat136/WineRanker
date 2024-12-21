@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 import logging
 
-PROJECT_NAME = 'MLOPS_datas_science'
+PROJECT_NAME = 'data_science'
 
 list_of_files = [
     ".github/workflows/.gitkeep",
