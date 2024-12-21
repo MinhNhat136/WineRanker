@@ -21,7 +21,8 @@ data_transformation = DataTransformationTrainingPipeline()
 model_trainer = ModelTrainerTrainingPipeline()
 model_evaluation = ModelEvaluationTrainingPipeline()
 
-pipeline = [data_ingestion, data_validation, data_transformation, model_trainer, model_evaluation]
+pipeline = [data_ingestion, data_validation, data_transformation, 
+            model_trainer, model_evaluation]
 
 for stage in pipeline:
    print(type(stage))

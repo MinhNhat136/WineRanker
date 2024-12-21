@@ -4,19 +4,16 @@ import numpy as np
 import pandas as pd
 from src.data_science.pipeline.prediction_pipeline import PredictionPipeline
 
-
 app = Flask(__name__) 
 
 @app.route('/',methods=['GET'])  
 def homePage():
     return render_template("index.html")
 
-
 @app.route('/train',methods=['GET']) 
 def training():
     os.system("python main.py")
     return "Training Successful!" 
-
 
 @app.route('/predict',methods=['POST','GET'])
 def index():
@@ -34,7 +31,6 @@ def index():
             sulphates =float(request.form['sulphates'])
             alcohol =float(request.form['alcohol'])
        
-         
             data = [fixed_acidity,volatile_acidity,citric_acid,residual_sugar,chlorides,free_sulfur_dioxide,total_sulfur_dioxide,density,pH,sulphates,alcohol]
             data = np.array(data).reshape(1, 11)
             
