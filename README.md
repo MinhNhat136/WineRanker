@@ -1,5 +1,5 @@
 
-### Setup
+## Setup
 git clone -> open folder with vsc -> terminal 
 
 conda create -p venv python==3.12 -y
@@ -10,7 +10,7 @@ conda activate venv/
 
 pip install -r requirements.txt
 
-### Workflows--ML Pipeline
+## Workflows Pipeline
 
 1. Data Ingestion
 2. Data Validation
@@ -18,9 +18,8 @@ pip install -r requirements.txt
 4. Model Trainer
 5. Model Evaluation
 
-## Workflows
+## Workflows Jobs Continuos Integration
 
-*UPDATE
 1. Config.yaml
 2. Params.yaml
 3. Config entity
@@ -28,5 +27,6 @@ pip install -r requirements.txt
 5. Update the components-- Data Ingestion, Data Transformation, Model Trainer
 6. Create Pipeline-- Training Pipeline,Prediction Pipeline
 7. Front end-- Api's, Training APi's, Batch Prtediction API's
+
 
 
