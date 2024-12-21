@@ -26,7 +26,6 @@
 7. Front end-- Api's, Training APi's, Batch Prtediction API's
 
 ## Plan 
-
 1. Building Flask App 
 2. Docker 
 3. Github Action for CI/CD

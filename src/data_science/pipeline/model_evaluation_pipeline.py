@@ -1,12 +1,13 @@
 from src.data_science.config.configuration import ConfigurationManager
 from src.data_science.components.model_evaluation import ModelEvaluation
-from src.data_science import logger
+from src.data_science.pipeline.template_training_pipeline import TemplateTrainingPipeline
 
-STAGE_NAME = "Model evaluation stage"
-
-class ModelEvaluationTrainingPipeline:
+class ModelEvaluationTrainingPipeline(TemplateTrainingPipeline):
     def __init__(self):
         pass
+
+    def stage(self):
+        return "Model evaluation stage"
 
     def initiate(self):
         config = ConfigurationManager()

@@ -1,18 +1,18 @@
 from src.data_science.config.configuration import ConfigurationManager
 from src.data_science.components.data_transformation import DataTransformation
 from src.data_science import logger
-
+from src.data_science.pipeline.template_training_pipeline import TemplateTrainingPipeline
 from pathlib import Path
 
 
-STAGE_NAME="Data Trnasformation Stage"
-
-class DataTransformationTrainingPipeline:
+class DataTransformationTrainingPipeline(TemplateTrainingPipeline):
     def __init__(self):
         pass
 
-    def initiate(self):
+    def stage(self):
+        return "Data Transformation Stage"
 
+    def initiate(self):
         try:
             with open(Path("artifacts/data_validation/status.txt"),'r') as f:
                 status=f.read().split(" ")[-1]

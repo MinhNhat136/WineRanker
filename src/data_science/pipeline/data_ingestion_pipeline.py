@@ -1,12 +1,13 @@
 from src.data_science.config.configuration import ConfigurationManager
 from src.data_science.components.data_ingestion import DataIngestion
-from src.data_science import logger
+from src.data_science.pipeline.template_training_pipeline import TemplateTrainingPipeline
 
-STAGE_NAME = "Data Ingestion Stage"
-
-class DataIngestionTrainingPipeline:
+class DataIngestionTrainingPipeline(TemplateTrainingPipeline):
     def __init__(self):
         pass
+
+    def stage(self):
+        return "Data Ingestion Stage"
 
     def initiate(self):
         config=ConfigurationManager()
@@ -15,12 +16,3 @@ class DataIngestionTrainingPipeline:
         data_ingestion.download_file()
         data_ingestion.extract_zip_file()
      
-if __name__ == '__main__':
-    try:
-        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
-        obj = DataIngestionTrainingPipeline()
-        obj.initiate()
-        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
-    except Exception as e:
-        logger.exception(e)
-        raise e
