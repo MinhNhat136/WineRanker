@@ -1,5 +1,7 @@
 import os
-from src.data_science import logger
+import sys
+sys.path.append('src')
+from data_science import logger
 import json
 from ensure import ensure_annotations
 from box import ConfigBox

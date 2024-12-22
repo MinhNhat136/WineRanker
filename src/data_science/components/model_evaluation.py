@@ -1,4 +1,5 @@
 import os
+import sys
 import pandas as pd
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from urllib.parse import urlparse
@@ -7,9 +8,10 @@ import mlflow.sklearn
 import numpy as np
 import joblib
 
-from src.data_science.entity.config_entity import ModelEvaluationConfig
-from src.data_science.constants import *
-from src.data_science.utils.common import read_yaml, create_directories,save_json
+sys.path.append('src')
+from data_science.entity.config_entity import ModelEvaluationConfig
+from data_science.constants import *
+from data_science.utils.common import read_yaml, create_directories,save_json
 
 class ModelEvaluation:
     def __init__(self, config: ModelEvaluationConfig):
