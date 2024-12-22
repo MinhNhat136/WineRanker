@@ -1,8 +1,5 @@
 from app import app 
 
-def test_homePage():
-    pass
-
 def test_training(): 
     response = app.test_client().get('/train')
     assert response.status_code == 200
