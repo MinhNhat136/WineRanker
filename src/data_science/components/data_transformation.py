@@ -1,7 +1,10 @@
 import os
-from src.data_science import logger
+import sys
+sys.path.append("src")
+
+from data_science import logger
 from sklearn.model_selection import train_test_split
-from src.data_science.entity.config_entity import DataTransformationConfig
+from data_science.entity.config_entity import DataTransformationConfig
 import pandas as pd
 
 class DataTransformation:
