@@ -166,3 +166,448 @@ x==========x ]
 [2024-12-21 22:13:13,242: INFO: _internal: 127.0.0.1 - - [21/Dec/2024 22:13:13] "POST /predict HTTP/1.1" 200 - ]
 [2024-12-21 22:13:19,609: INFO: _internal: 127.0.0.1 - - [21/Dec/2024 22:13:19] "GET /predict HTTP/1.1" 200 - ]
 [2024-12-21 22:13:19,650: INFO: _internal: 127.0.0.1 - - [21/Dec/2024 22:13:19] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 02:35:16,353: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x00000260C63A12E0>> started <<<<<< ]
+[2024-12-22 02:35:16,368: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 02:35:16,385: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 02:35:16,403: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 02:35:16,408: INFO: common: created directory at: artifacts ]
+[2024-12-22 02:35:16,410: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-22 02:35:17,994: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: AB61:1C8DA4:2F3D5F:45817A:6767152E
+Accept-Ranges: bytes
+Date: Sat, 21 Dec 2024 19:35:18 GMT
+Via: 1.1 varnish
+X-Served-By: cache-sin-wsss1830025-SIN
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1734809718.823693,VS0,VE317
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 61f2cad24b7b1be2d32fbb2fdb734cfdfacaf4f4
+Expires: Sat, 21 Dec 2024 19:40:18 GMT
+Source-Age: 0
+
+ ]
+[2024-12-22 02:35:18,017: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x00000260C63A12E0>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 02:35:18,019: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x00000260C63A1490>> started <<<<<< ]
+[2024-12-22 02:35:18,023: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 02:35:18,024: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 02:35:18,027: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 02:35:18,027: INFO: common: created directory at: artifacts ]
+[2024-12-22 02:35:18,027: INFO: common: created directory at: artifacts/data_validation ]
+[2024-12-22 02:35:18,057: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x00000260C63A1490>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 02:35:18,058: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x00000260E975AED0>> started <<<<<< ]
+[2024-12-22 02:35:18,073: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 02:35:18,079: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 02:35:18,083: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 02:35:18,087: INFO: common: created directory at: artifacts ]
+[2024-12-22 02:35:18,087: INFO: common: created directory at: artifacts/data_transformation ]
+[2024-12-22 02:35:18,115: INFO: data_transformation: Splited data into training and test sets ]
+[2024-12-22 02:35:18,115: INFO: data_transformation: (1199, 12) ]
+[2024-12-22 02:35:18,115: INFO: data_transformation: (400, 12) ]
+[2024-12-22 02:35:18,115: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x00000260E975AED0>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 02:35:18,115: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x000002608B8ACE90>> started <<<<<< ]
+[2024-12-22 02:35:18,118: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 02:35:18,118: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 02:35:18,123: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 02:35:18,123: INFO: common: created directory at: artifacts ]
+[2024-12-22 02:35:18,123: INFO: common: created directory at: artifacts/model_trainer ]
+[2024-12-22 02:35:18,193: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x000002608B8ACE90>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 02:35:18,194: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x000002608BDF8530>> started <<<<<< ]
+[2024-12-22 02:35:18,196: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 02:35:18,205: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 02:35:18,207: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 02:35:18,211: INFO: common: created directory at: artifacts ]
+[2024-12-22 02:35:18,213: INFO: common: created directory at: artifacts/model_evaluation ]
+[2024-12-22 02:35:20,018: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json ]
+[2024-12-22 02:35:37,146: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x000002608BDF8530>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 02:37:13,468: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 02:37:13,468: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 02:37:19,323: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 02:37:19] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 02:37:19,433: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 02:37:19] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 02:45:10,818: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 02:45:10] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 17:54:18,326: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 17:54:18,326: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 17:55:15,557: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 17:55:15] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 17:55:15,601: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 17:55:15] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 17:55:15,682: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 17:55:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:13:32,754: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 18:13:32,754: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 18:13:36,341: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x00000158D9A8E2A0>> started <<<<<< ]
+[2024-12-22 18:13:36,362: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:13:36,365: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:13:36,381: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:13:36,381: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:13:36,390: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-22 18:13:36,391: INFO: data_ingestion: File already exists ]
+[2024-12-22 18:13:36,412: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x00000158D9A8E2A0>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:13:36,413: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x00000158D9A8E450>> started <<<<<< ]
+[2024-12-22 18:13:36,415: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:13:36,415: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:13:36,418: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:13:36,418: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:13:36,418: INFO: common: created directory at: artifacts/data_validation ]
+[2024-12-22 18:13:36,448: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x00000158D9A8E450>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:13:36,449: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x00000158E0038110>> started <<<<<< ]
+[2024-12-22 18:13:36,463: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:13:36,463: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:13:36,465: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:13:36,465: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:13:36,466: INFO: common: created directory at: artifacts/data_transformation ]
+[2024-12-22 18:13:36,484: INFO: data_transformation: Splited data into training and test sets ]
+[2024-12-22 18:13:36,484: INFO: data_transformation: (1199, 12) ]
+[2024-12-22 18:13:36,484: INFO: data_transformation: (400, 12) ]
+[2024-12-22 18:13:36,484: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x00000158E0038110>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:13:36,484: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x00000158E136F200>> started <<<<<< ]
+[2024-12-22 18:13:36,484: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:13:36,491: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:13:36,494: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:13:36,495: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:13:36,495: INFO: common: created directory at: artifacts/model_trainer ]
+[2024-12-22 18:13:36,545: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x00000158E136F200>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:13:36,545: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x00000158E1395F10>> started <<<<<< ]
+[2024-12-22 18:13:36,548: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:13:36,548: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:13:36,548: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:13:36,548: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:13:36,548: INFO: common: created directory at: artifacts/model_evaluation ]
+[2024-12-22 18:13:37,329: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json ]
+[2024-12-22 18:13:44,997: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x00000158E1395F10>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:15:21,636: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:15:21,638: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:15:26,179: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:15:26] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:15:26,309: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:15:26] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 - ]
+[2024-12-22 18:15:26,325: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:15:26] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:17:12,333: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:17:12] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:21:18,001: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:21:18,001: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:21:20,689: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:21:20] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:21:20,816: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:21:20] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:32:20,598: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:32:20,598: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:32:23,804: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:32:23] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:32:23,897: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:32:23] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:32:23,904: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:32:23] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:32:23,918: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:32:23] "[33mGET /static/assets/img/page-background.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:34:00,590: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:34:00,604: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:34:01,809: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:01] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:34:01,895: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:34:01,895: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:01] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:34:17,392: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:34:17,392: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:34:20,743: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:20] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:34:20,832: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:34:20,832: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:20] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:34:20,844: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:34:20] "[33mGET /static/assets/img/page-background.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:37:52,104: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:37:52,104: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:37:53,417: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:37:53] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:37:53,513: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:37:53] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:37:53,514: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:37:53] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:39:07,617: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:39:07] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:39:07,652: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:39:07] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:39:07,672: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:39:07] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:42:15,959: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:15] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:42:16,003: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:42:16,004: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:16] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:42:16,967: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:16] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:42:17,009: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:42:17,010: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:42:17] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:43:03,902: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:43:03,903: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:43:05,662: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:05] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:43:05,754: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:05] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:43:05,773: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:43:38,849: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:38] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:43:38,888: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:43:38,888: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:43:38] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 - ]
+[2024-12-22 18:45:26,140: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:26] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:45:26,184: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:26] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:45:26,195: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:26] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:45:26,208: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:26] "GET /static/assets/img/background.jpg HTTP/1.1" 200 - ]
+[2024-12-22 18:45:58,149: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:58] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:45:58,193: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:58] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:45:58,195: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:58] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:45:58,229: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:45:58] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:46:12,947: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:46:12] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:46:12,979: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:46:12] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:46:12,979: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:46:12] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:46:13,000: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:46:13] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:47:34,220: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:34] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:47:34,268: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:34] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:47:34,286: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:34] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:47:34,306: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:34] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:47:43,841: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:43] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:47:43,877: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:43] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:47:43,895: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:43] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 18:47:43,918: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:47:43] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:48:13,533: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:48:13] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:50:11,508: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:11] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:50:14,309: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:14] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:50:32,295: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:32] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:50:34,977: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:34] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:50:54,393: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:50:54,393: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:50:56,755: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:56] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:50:56,795: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:56] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:50:56,818: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:50:56,842: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:50:56] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:51:03,622: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:03] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:51:03,667: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:51:03,668: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:03] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:51:06,315: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:06] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:51:06,359: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:51:06,359: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:06] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:51:12,575: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:12] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:51:12,613: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:12] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:51:12,614: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:51:23,389: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:23] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:51:23,428: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:51:23,429: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:51:23] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:51:50,646: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 18:51:50,646: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 18:51:53,729: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x000001283B0D9C70>> started <<<<<< ]
+[2024-12-22 18:51:53,731: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:51:53,732: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:51:53,734: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:51:53,734: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:51:53,735: INFO: common: created directory at: artifacts/data_ingestion ]
+[2024-12-22 18:51:53,735: INFO: data_ingestion: File already exists ]
+[2024-12-22 18:51:53,738: INFO: main: >>>>>> stage <bound method DataIngestionTrainingPipeline.stage of <src.data_science.pipeline.data_ingestion_pipeline.DataIngestionTrainingPipeline object at 0x000001283B0D9C70>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:51:53,739: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x0000012835A92300>> started <<<<<< ]
+[2024-12-22 18:51:53,741: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:51:53,743: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:51:53,744: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:51:53,745: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:51:53,746: INFO: common: created directory at: artifacts/data_validation ]
+[2024-12-22 18:51:53,791: INFO: main: >>>>>> stage <bound method DataValidationTrainingPipeline.stage of <src.data_science.pipeline.data_validation_pipeline.DataValidationTrainingPipeline object at 0x0000012835A92300>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:51:53,795: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x000001283D0EE6F0>> started <<<<<< ]
+[2024-12-22 18:51:53,801: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:51:53,804: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:51:53,807: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:51:53,808: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:51:53,809: INFO: common: created directory at: artifacts/data_transformation ]
+[2024-12-22 18:51:53,829: INFO: data_transformation: Splited data into training and test sets ]
+[2024-12-22 18:51:53,830: INFO: data_transformation: (1199, 12) ]
+[2024-12-22 18:51:53,830: INFO: data_transformation: (400, 12) ]
+[2024-12-22 18:51:53,831: INFO: main: >>>>>> stage <bound method DataTransformationTrainingPipeline.stage of <src.data_science.pipeline.data_transformation_pipeline.DataTransformationTrainingPipeline object at 0x000001283D0EE6F0>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:51:53,833: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x000001283D38B4A0>> started <<<<<< ]
+[2024-12-22 18:51:53,837: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:51:53,838: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:51:53,841: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:51:53,842: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:51:53,842: INFO: common: created directory at: artifacts/model_trainer ]
+[2024-12-22 18:51:53,879: INFO: main: >>>>>> stage <bound method ModelTrainerTrainingPipeline.stage of <src.data_science.pipeline.model_trainer_pipeline.ModelTrainerTrainingPipeline object at 0x000001283D38B4A0>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:51:53,882: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x00000128402BDC10>> started <<<<<< ]
+[2024-12-22 18:51:53,884: INFO: common: yaml file: config\config.yaml loaded successfully ]
+[2024-12-22 18:51:53,885: INFO: common: yaml file: params.yaml loaded successfully ]
+[2024-12-22 18:51:53,887: INFO: common: yaml file: schema.yaml loaded successfully ]
+[2024-12-22 18:51:53,888: INFO: common: created directory at: artifacts ]
+[2024-12-22 18:51:53,889: INFO: common: created directory at: artifacts/model_evaluation ]
+[2024-12-22 18:51:54,541: INFO: common: json file saved at: artifacts\model_evaluation\metrics.json ]
+[2024-12-22 18:52:00,922: INFO: main: >>>>>> stage <bound method ModelEvaluationTrainingPipeline.stage of <src.data_science.pipeline.model_evaluation_pipeline.ModelEvaluationTrainingPipeline object at 0x00000128402BDC10>> completed <<<<<<
+
+x==========x ]
+[2024-12-22 18:52:01,636: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:01] "GET /train HTTP/1.1" 200 - ]
+[2024-12-22 18:52:06,133: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:06] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:52:06,189: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:52:06,192: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:06] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:52:10,855: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:10] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:52:10,896: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:10] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:52:10,897: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:52:12,745: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:12] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:52:12,798: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:52:12,801: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:52:12] "[33mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 404 - ]
+[2024-12-22 18:54:03,239: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:54:03] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:54:03,295: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:54:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:54:03,302: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:54:03] "GET /static/assets/img/form-v9.jpg HTTP/1.1" 200 - ]
+[2024-12-22 18:54:03,324: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:54:03] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:22,103: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:22] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:55:22,155: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:22,155: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:22] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:22,163: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:22] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:23,681: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:23] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:55:23,738: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:23,739: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:23] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:23,750: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:23] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:29,781: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:29] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:55:29,830: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:29,830: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:29] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:38,394: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 18:55:38,394: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 18:55:39,945: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:39] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:55:40,025: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:40,029: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:40] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:55:40,032: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:55:40] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:57:42,003: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:42] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 18:57:42,043: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:57:42,044: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:42] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:57:42,067: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:42] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:57:49,720: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:49] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 18:57:49,771: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 18:57:49,771: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 18:57:49] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:03:11,007: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:11] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:03:11,052: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:03:11,052: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:11] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:03:11,062: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:11] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:03:13,678: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:13] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:03:13,736: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:03:13,737: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:03:13] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:07:04,672: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:07:04] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:07:04,718: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:07:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:07:04,719: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:07:04] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:07:04,739: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:07:04] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:08,961: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 19:16:08,962: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 19:16:09,688: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 19:16:09,690: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 19:16:11,198: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:11] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:16:11,290: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:11] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:11,292: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:11,307: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:11] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:15,943: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:15] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:16:15,995: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:15,995: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:15] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:16,028: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:16] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:33,127: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:33] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:16:33,173: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:16:33,174: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:16:33] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:16,150: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:16] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:18:16,197: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:16] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:16,218: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:16] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 19:18:16,235: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:16] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:31,565: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 19:18:31,565: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 19:18:32,278: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 19:18:32,291: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 19:18:34,125: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:34] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:18:34,263: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:34,264: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:34] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:34,278: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:34] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:42,548: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:42] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:18:42,608: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:42,610: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:42] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:50,317: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:50] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:18:50,358: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:18:50,359: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:18:50] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:20:06,074: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 19:20:06,074: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 19:20:06,784: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 19:20:06,791: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 19:20:10,004: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:20:10] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:20:10,080: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:20:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:20:10,096: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:20:10] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:20:10,097: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:20:10] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:22:52,057: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 19:22:52,057: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 19:22:52,786: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 19:22:52,786: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 19:22:57,924: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:57] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:22:58,015: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:58] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:22:58,024: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:58] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 19:22:58,051: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:58] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:22:59,220: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:59] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:22:59,256: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:22:59,258: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:22:59] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:23:03,217: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:23:03] "POST /predict HTTP/1.1" 200 - ]
+[2024-12-22 19:23:03,255: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:23:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:23:03,257: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:23:03] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:26:59,206: INFO: utils: Note: NumExpr detected 16 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8. ]
+[2024-12-22 19:26:59,207: INFO: utils: NumExpr defaulting to 8 threads. ]
+[2024-12-22 19:27:00,103: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.5.22:8080 ]
+[2024-12-22 19:27:00,103: INFO: _internal: [33mPress CTRL+C to quit[0m ]
+[2024-12-22 19:27:00,192: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:00] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:27:00,296: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:00] "GET /static/css/style.css HTTP/1.1" 200 - ]
+[2024-12-22 19:27:00,310: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:00] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:27:00,469: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:00] "[36mGET /static/assets/img/background.jpg HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:27:05,503: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:05] "GET / HTTP/1.1" 200 - ]
+[2024-12-22 19:27:05,542: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 - ]
+[2024-12-22 19:27:05,542: INFO: _internal: 127.0.0.1 - - [22/Dec/2024 19:27:05] "[36mGET /static/assets/img/form-v9.jpg HTTP/1.1[0m" 304 - ]
