@@ -1,10 +1,13 @@
 import pandas as pd
 import os
-from src.data_science import logger
+import sys
+
+sys.path.append("src")
+from data_science import logger
 from sklearn.linear_model import ElasticNet
 import joblib
 
-from src.data_science.entity.config_entity import ModelTrainerConfig
+from data_science.entity.config_entity import ModelTrainerConfig
 
 
 class ModelTrainer:
