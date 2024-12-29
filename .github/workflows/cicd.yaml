@@ -35,7 +35,9 @@ jobs:
       run: |
         pytest
   build-and-publish:
-    needs: build-and-test
+    needs: 
+      - build-and-test
+      - dockerbuild
     runs-on: ubuntu-latest
 
     steps:
