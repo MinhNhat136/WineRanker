@@ -11,4 +11,5 @@ def test_home():
     assert b"<!DOCTYPE html>" in response.data
 
 def test_predict(): 
-    pass
+    response = app.test_client().get('/predict')
+    assert b"<!DOCTYPE html>" in response.data

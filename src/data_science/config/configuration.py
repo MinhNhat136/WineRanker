@@ -8,10 +8,12 @@ class ConfigurationManager:
     def __init__(self,
                  config_path=CONFIG_FILE_PATH,
                  params_filepath=PARAMS_FILE_PATH,
-                 schema_filepath = SCHEMA_FILE_PATH):
+                 schema_filepath = SCHEMA_FILE_PATH,
+                 pipeline_filepath = PIPELINE_FILE_PATH):
         self.config=read_yaml(config_path)
         self.params=read_yaml(params_filepath)
         self.schema=read_yaml(schema_filepath)
+        self.pipeline = read_yaml(params_filepath)
         create_directories([self.config.artifacts_root])
 
     def get_data_ingestion_config(self)-> DataIngestionConfig:
@@ -85,8 +87,6 @@ class ConfigurationManager:
             metric_file_name = config.metric_file_name,
             target_column = schema.name,
             mlflow_uri="https://dagshub.com/MinhNhat136/MLOPS_data_science_project.mlflow"
-
-
         )
         return model_evaluation_config
 

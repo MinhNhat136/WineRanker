@@ -26,3 +26,9 @@ model_evaluation:
   test_data_path: artifacts/data_transformation/test.csv
   model_path: artifacts/model_trainer/model.joblib
   metric_file_name: artifacts/model_evaluation/metrics.json
+
+mlflow:
+  source_URL: https://dagshub.com/MinhNhat136/MLOPS_data_science_project.mlflow
+  username: MinhNhat136
+  password: b4bd45940c14061b659c2dacaec80eea3f468f77
+

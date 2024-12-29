@@ -2,3 +2,5 @@ venv/
 logs/
 artifacts/
 mlruns/
+logs
+

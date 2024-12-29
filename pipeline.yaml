@@ -1,0 +1,9 @@
+Training:
+  ingestion: src/data_science/pipeline/data_ingestion_pipeline.py
+  validation: src/data_science/pipeline/data_validation_pipeline.py
+  transformation: src/data_science/pipeline/data_transformation_pipeline.py
+  model_trainer: src/data_science/pipeline/model_trainer_pipeline.py
+  model_evaluation: src/data_science/pipeline/model_evaluation.py
+
+Predict: src/data_science/pipeline/predict_pipeline.py
+
