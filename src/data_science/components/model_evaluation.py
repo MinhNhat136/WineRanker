@@ -53,8 +53,9 @@ class ModelEvaluation:
 
 
             if tracking_url_type_store != "file":
-
+                print('run here')
                 mlflow.sklearn.log_model(model, "model", registered_model_name="ElasticnetModel")
             else:
+                print('else')
                 mlflow.sklearn.log_model(model, "model")
     
